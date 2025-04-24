@@ -1,0 +1,112 @@
+:root {
+    --color-blue: #515DEF;
+    --color-black: #333333;
+    --color-gray: #909090;
+    --color-white: #FBFBFB;
+    --font-primary: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-blue);
+    font-family: var(--font-primary);
+    background-image: url(../images/Mask-Group.png);
+    background-position: top right;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1300;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main-header {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    display: flex;
+    align-items: center;
+    gap: 148px;
+    margin-bottom: 40px;
+}
+
+.main-menu {
+    width: 100%;
+    & ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 56px;
+    list-style: none;
+      & li:last-child {
+        margin-left: auto;
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: var(--color-blue);
+      }
+        & a {
+            text-decoration: none;
+            color: white;
+            font-weight: 300;
+        }
+    } 
+}
+
+.hero {
+    width: 55%;
+    color: white;
+    margin-bottom: 60px;
+    &__initial {
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    &__title {
+        font-size: 55px;
+        line-height: 1.2em;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    &__button {
+        display: inline-flex;
+        padding: 8px 10px;
+        background-color: var(--color-white);
+        color: var(--color-black);
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+.categories {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: var(--color-white);
+    padding: 30px 110px;
+    width: 90%;
+    transform: translateX(-100px);
+}
+.category {    
+    &__title {
+        font-size: 16px;
+        color: var(--color-black);
+    }
+    &__description {
+        font-size: 16px;
+        color: var(--color-gray);
+        font-weight: 300;
+    }
+    &__icon {
+        width: 50px;
+    }
+}
