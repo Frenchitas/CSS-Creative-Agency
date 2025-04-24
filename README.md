@@ -1,2 +1,2 @@
 # CSS-Creative-Agency
-![Image](src/images/Creative agency.png)
+![Image](images/Creative agency.png)
