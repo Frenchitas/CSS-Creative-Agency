@@ -1,5 +1,11 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
-  base: "./", // Usa rutas relativas en los enlaces generados en el HTML
+ base: '/CSS-Coworking-Space/',
+ resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
 });
